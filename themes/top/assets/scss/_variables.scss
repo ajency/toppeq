@@ -1,0 +1,8 @@
+$primary: theme-color("primary");
+$secondary: theme-color("secondary");
+
+$link-color: theme-color("primary");
+$link-hover-color: lighten(theme-color("primary"), 20%);
+
+$font-family-base: 'Nunito Sans', Helvetica, Arial, sans-serif, -apple-system;
+$font-family-heading: 'Nunito Sans', serif, -apple-system;
