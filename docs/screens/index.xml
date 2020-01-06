@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Screens on Toppeq</title>
-    <link>http://example.org/screens/</link>
+    <link>https://ajency.github.io/toppeq/screens/</link>
     <description>Recent content in Screens on Toppeq</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 06 Jan 2020 12:34:20 +0530</lastBuildDate>
     
-	<atom:link href="http://example.org/screens/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ajency.github.io/toppeq/screens/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Style Guide</title>
-      <link>http://example.org/screens/style-guide/</link>
+      <link>https://ajency.github.io/toppeq/screens/style-guide/</link>
       <pubDate>Mon, 06 Jan 2020 12:34:20 +0530</pubDate>
       
-      <guid>http://example.org/screens/style-guide/</guid>
+      <guid>https://ajency.github.io/toppeq/screens/style-guide/</guid>
       <description></description>
     </item>
     

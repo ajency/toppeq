@@ -1,5 +1,5 @@
-baseURL = "http://example.org/"
+baseURL = "https://ajency.github.io/toppeq/"
 languageCode = "en-us"
 title = "Toppeq"
-theme = "top"
+theme = "toppeq"
 publishDir = "docs"

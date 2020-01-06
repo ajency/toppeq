@@ -3,29 +3,29 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/screens/</loc>
+    <loc>https://ajency.github.io/toppeq/screens/</loc>
     <lastmod>2020-01-06T12:34:20+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/screens/style-guide/</loc>
+    <loc>https://ajency.github.io/toppeq/screens/style-guide/</loc>
     <lastmod>2020-01-06T12:34:20+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>https://ajency.github.io/toppeq/</loc>
     <lastmod>2020-01-06T12:34:20+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://ajency.github.io/toppeq/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://ajency.github.io/toppeq/tags/</loc>
     <priority>0</priority>
   </url>
   
