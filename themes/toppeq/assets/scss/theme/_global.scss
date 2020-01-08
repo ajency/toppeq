@@ -1,0 +1,25 @@
+:root {
+    --primary-color: #4d6d9a;
+    --secondary-color: #0F2952;
+    --font-color: ##000;
+    --bg-color: #fff;
+    --select-text-color: #a2a2a2;
+    --select-bg-color: #f8f8f8;
+}
+
+[data-theme="dark"] {
+    --primary-color: #4d6d9a;
+    --secondary-color: #0F2952;
+    --font-color: #fff;
+    --bg-color: #000;
+    --select-text-color: #a2a2a2;
+    --select-bg-color: #141414;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    @media (min-width: 1200px) {
+        padding: 0 40px;
+    }
+}

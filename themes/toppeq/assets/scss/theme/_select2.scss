@@ -6,8 +6,8 @@
         .select2-selection{
             height: 40px;
             &--single{
-                border-radius: 3.5px;
-                background-color: #f8f8f8;
+                border-radius: 7px;
+                background-color: var(--select-bg-color);
                 border: 0;
                 outline: 0;
             }
