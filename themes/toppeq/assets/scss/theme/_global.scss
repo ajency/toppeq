@@ -5,6 +5,10 @@
     --bg-color: #fff;
     --select-text-color: #a2a2a2;
     --select-bg-color: #f8f8f8;
+    --select-highlight-color: #ededed;
+    --card-bg: #fafafa;
+    --card-header-bg: #f6f6f6;
+    --card-more: #7a7a7a;
 }
 
 [data-theme="dark"] {
@@ -14,6 +18,10 @@
     --bg-color: #000;
     --select-text-color: #a2a2a2;
     --select-bg-color: #141414;
+    --select-highlight-color: #0b0b0b;
+    --card-bg: #0b0b0b;
+    --card-header-bg: #141414;
+    --card-more: #7a7a7a;
 }
 
 body {

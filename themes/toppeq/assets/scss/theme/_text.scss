@@ -5,7 +5,10 @@ h2, .h2 {
     font-size: 35px;
 }
 h3, .h3 { 
-    font-size: 29px;
+    font-size: 30px;
+}
+.font-weight-bolder{
+    font-weight: 900 !important;
 }
 
 .section-main-title{
@@ -14,6 +17,9 @@ h3, .h3 {
     line-height: normal;
     color: var(--font-color);
     margin-bottom: 40px;
+    @media (max-width: 767px) {
+        font-size: 30px;
+    }
 }
 
 .section-title-1{
@@ -23,4 +29,24 @@ h3, .h3 {
     letter-spacing: normal;
     color: var(--font-color);
     margin-bottom: 0;
+}
+
+.card-title{
+    font-size: 21px;
+    font-weight: 700;
+    color: var(--font-color);
+    &-light{
+        font-weight: 300;
+    }
+}
+
+.label{
+    &-normal{
+        font-size: 20px;
+        font-weight: normal;
+    }
+    &-small{
+        font-size: 15px;
+        font-weight: normal;
+    }
 }

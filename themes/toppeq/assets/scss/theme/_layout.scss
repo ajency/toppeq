@@ -4,5 +4,87 @@
 hr.separator{
     margin-top: 13px;
     margin-bottom: 23px;
-    border-top: 1px solid $input-border;
+    border-top: 2px solid $input-border;
+}
+
+hr.line-separator{
+    border-top: 1px solid var(--font-color);
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+
+
+.analysis-title{
+    h1{
+        @media (max-width: 1024px) {
+            font-size: 30px;
+        }
+    } 
+    @media (max-width: 991px) {
+        margin-bottom: 15px;
+    }
+}
+.analysis-list{
+    ul{
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0;
+        li{
+            font-size: 42px;
+            font-weight: 900;
+            color: var(--font-color);
+            display: inline-block;
+            position: relative;
+            padding-left: 15px;
+            span{
+                font-size: 22px;
+                @media (max-width: 992px) {
+                    font-size: 16px;
+                }
+            }
+            &:before{
+                content: "";
+                width: 4px;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background-color: #f4a24c;
+            }
+            @media (max-width: 1024px) {
+                font-size: 28px;
+            }
+            @media (max-width: 767px) {
+                margin-bottom: 15px;
+            }
+        }
+        @media (max-width: 767px) {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.datacard{
+    border-radius: 17px;
+    background-color: var(--card-bg);
+    &-header{
+        background-color: var(--card-header-bg);
+        padding: 17px 25px;
+        border-top-left-radius: 17px;
+        border-top-right-radius: 17px;
+    }
+    &-content{
+        padding: 35px 25px;
+    }
+    &-footer{
+        padding: 10px 25px;
+        a{
+            color: var(--card-more);
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 300px;
+        }
+    }
 }
