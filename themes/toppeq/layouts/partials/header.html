@@ -1,5 +1,27 @@
 <header>
-    <div class="container mt-2">
-        This is header
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light bg-light p-0">
+            <div class="logo">
+                <a href="#" class="d-inline-block">
+                    <img src="{{"images/logo.png" | relURL }}" alt="logo" class="image-fluid">
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Security</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Funding</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Logout</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
     </div>
 </header>

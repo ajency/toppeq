@@ -30,6 +30,7 @@
 @import "bootstrap/popover";
 @import "bootstrap/utilities";
 @import "bootstrap/nav";
+@import "bootstrap/navbar";
 
 // Theme Styles
 
@@ -37,5 +38,5 @@
 @import "theme/_buttons";
 @import "theme/_form";
 @import "theme/_layout";
-
-
+@import "theme/_mixins";
+@import "theme/_header";

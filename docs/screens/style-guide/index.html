@@ -5,11 +5,33 @@
     <link type="image/x-icon" href="/toppeq/img/favicon.ico" rel="shortcut icon">
     
         
-        <link rel="stylesheet" href="/toppeq/css/style.min.4cec2a1dd5610f748342d50d235584d3a76fd73928edce4af7611bac5d0629c1.css">
+        <link rel="stylesheet" href="/toppeq/css/style.min.72b131d17e76f619f194dfbcf333eddafc3c44a1cab0b522fdf255624705a6fc.css">
     
 </head><body><header>
-    <div class="container mt-2">
-        This is header
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light bg-light p-0">
+            <div class="logo">
+                <a href="#" class="d-inline-block">
+                    <img src="/toppeq/images/logo.png" alt="logo" class="image-fluid">
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Security</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Funding</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Logout</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
     </div>
 </header>
 <div id="content">
@@ -17,8 +39,8 @@
 <div class="container-fluid mt-2">
 
 	<div class="section-wrapper">
-		<h2 class="font-weight-bold">Typography</h2>
-		<hr class="my-3"></hr>
+		<h2 class="section-title-1">Typography</h2>
+		<hr class="separator"></hr>
 		<h1 class="">Heading 1</h1>
 		<h2 class="">Heading 2</h2>
 		<h3 class="">Heading 3</h3>
@@ -28,19 +50,43 @@
 	</div>
 
 	<div class="section-wrapper">
-		<h2 class="font-weight-bold">Buttons</h2>
-		<hr class="my-3"></hr>
-		<button class="btn btn-primary">Save</button>
-		<button class="btn btn-outline-primary">Save</button>
+		<h2 class="section-title-1">Buttons</h2>
+		<hr class="separator"></hr>
+		<button class="btn btn-primary">Save Changes</button>
+		<p></p>
+		<button class="btn btn-outline-primary">Cancel</button>
 	</div>
 
-	
+	<div class="section-wrapper">
+		<h2 class="section-title-1">Buttons</h2>
+		<hr class="separator"></hr>
+		<div class="form-field">
+			<label class="form-label">
+				<span class="form-label-content">Input Label</span>
+			</label>
+			<input class="form-control" type="text" placeholder="Text field">                            
+		</div>
+		<div class="form-field">
+			<label class="form-label">
+				<span class="form-label-content">Input Label</span>
+			</label>
+			<input class="form-control" type="text" placeholder="Text field">                            
+		</div>
+
+		<div class="form-field">
+			<label class="switch">
+				<input type="checkbox">
+				<span class="slider round"></span>
+			</label>
+		</div>
+
+	</div>
 
 </div>
 
 
         </div><footer>
-    <div class="container mt-2">
+    <div class="container-fluid mt-2">
         This is footer 
     </div>
 </footer></body>

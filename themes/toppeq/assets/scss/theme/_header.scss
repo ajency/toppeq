@@ -1,0 +1,40 @@
+.logo{
+    width: 180px;
+    img{
+        max-width: 100%;
+        width: 100%;
+        height: auto;   
+    }
+}
+
+header{
+    padding: 30px 0;
+}
+
+.collapse{
+    width: calc(100% - 180px);
+    text-align: right;
+    .navbar-nav{
+        margin-left: auto;
+        .nav-item {
+            padding: 0 20px;
+            .nav-link{
+                padding: 0;
+                color: $black-1;
+                font-size: 20px;
+                font-weight: normal;
+                font-stretch: normal;
+                letter-spacing: normal;
+                border-bottom: 3px solid transparent;
+                &:hover{
+                    border-bottom: 3px solid $black-1;
+                }
+            }
+            &.active{
+                .nav-link{
+                    border-bottom: 3px solid $black-1;
+                }
+            }
+        }
+    }
+}
