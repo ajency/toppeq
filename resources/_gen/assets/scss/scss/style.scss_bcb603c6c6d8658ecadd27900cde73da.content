@@ -7249,8 +7249,8 @@ h3, .h3 {
   font-size: 29px; }
 
 .section-main-title {
-  font-size: 27.5px;
-  font-weight: normal;
+  font-size: 40px;
+  font-weight: 900;
   line-height: normal;
   color: var(--font-color);
   margin-bottom: 40px; }
@@ -7322,8 +7322,8 @@ h3, .h3 {
 .switch {
   position: relative;
   display: inline-block;
-  width: 38px;
-  height: 17px; }
+  width: 76px;
+  height: 35px; }
   .switch input {
     opacity: 0;
     width: 0;
@@ -7335,7 +7335,7 @@ h3, .h3 {
   .switch input:focus + .slider {
     box-shadow: 0 0 1px #272727; }
   .switch input:checked + .slider:before {
-    transform: translateX(19px); }
+    transform: translateX(40px); }
   .switch .slider {
     position: absolute;
     cursor: pointer;
@@ -7350,25 +7350,25 @@ h3, .h3 {
     .switch .slider::before {
       position: absolute;
       content: "";
-      height: 13px;
-      width: 13px;
+      height: 29px;
+      width: 29px;
       left: 3px;
-      bottom: 2px;
+      bottom: 3px;
       background-color: white;
       -webkit-transition: .4s;
       transition: .4s; }
     .switch .slider:after {
       position: absolute;
-      top: -1px;
-      right: -1px;
+      top: -2px;
+      right: -2px;
       content: "";
       border-radius: 50%;
-      width: 7px;
-      height: 7px;
+      width: 14px;
+      height: 14px;
       background-color: #ffec00;
       box-shadow: 0 1px 8.5px 0 #ffec00; }
     .switch .slider.round {
-      border-radius: 8px; }
+      border-radius: 17px; }
       .switch .slider.round::before {
         border-radius: 50%; }
 
@@ -7422,6 +7422,12 @@ header {
     width: calc(100% - 100px);
     text-align: right; } }
 
+.navbar-toggler {
+  padding: 0;
+  outline: 0; }
+  .navbar-toggler:focus {
+    outline: 0; }
+
 .select2-container.select2-container--default {
   max-width: 180px !important;
   width: 180px !important;
@@ -7465,7 +7471,7 @@ header {
 :root {
   --primary-color: #4d6d9a;
   --secondary-color: #0F2952;
-  --font-color: ##000;
+  --font-color: #000;
   --bg-color: #fff;
   --select-text-color: #a2a2a2;
   --select-bg-color: #f8f8f8; }
