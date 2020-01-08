@@ -7283,6 +7283,7 @@ a.text-error:hover, a.text-error:focus {
   font-size: 16px;
   font-weight: normal;
   color: #979797;
+  color: #000;
   border-radius: 0;
   border: 0;
   border-bottom: 1px solid #979797;
@@ -7306,25 +7307,26 @@ a.text-error:hover, a.text-error:focus {
   .form-control:focus {
     border: 0;
     border-bottom: 1px solid #979797;
-    box-shadow: none; }
+    box-shadow: none;
+    color: #000; }
 
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px; }
+  width: 38px;
+  height: 17px; }
   .switch input {
     opacity: 0;
     width: 0;
     height: 0; }
   .switch input:checked + .slider {
-    background-color: #4d6d9a; }
+    background-color: #272727; }
+    .switch input:checked + .slider::after {
+      display: none; }
   .switch input:focus + .slider {
-    box-shadow: 0 0 1px #4d6d9a; }
+    box-shadow: 0 0 1px #272727; }
   .switch input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px); }
+    transform: translateX(19px); }
   .switch .slider {
     position: absolute;
     cursor: pointer;
@@ -7332,21 +7334,32 @@ a.text-error:hover, a.text-error:focus {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: #87ceeb;
     -webkit-transition: .4s;
-    transition: .4s; }
+    transition: .4s;
+    overflow: hidden; }
     .switch .slider::before {
       position: absolute;
       content: "";
-      height: 26px;
-      width: 26px;
-      left: 4px;
-      bottom: 4px;
+      height: 13px;
+      width: 13px;
+      left: 3px;
+      bottom: 2px;
       background-color: white;
       -webkit-transition: .4s;
       transition: .4s; }
+    .switch .slider:after {
+      position: absolute;
+      top: -1px;
+      right: -1px;
+      content: "";
+      border-radius: 50%;
+      width: 7px;
+      height: 7px;
+      background-color: #ffec00;
+      box-shadow: 0 1px 8.5px 0 #ffec00; }
     .switch .slider.round {
-      border-radius: 34px; }
+      border-radius: 8px; }
       .switch .slider.round::before {
         border-radius: 50%; }
 
