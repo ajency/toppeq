@@ -11,9 +11,7 @@ header{
     padding: 30px 0;
 }
 
-.collapse{
-    width: calc(100% - 180px);
-    text-align: right;
+#navbarNav{    
     .navbar-nav{
         margin-left: auto;
         .nav-item {
@@ -26,6 +24,7 @@ header{
                 font-stretch: normal;
                 letter-spacing: normal;
                 border-bottom: 3px solid transparent;
+                display: inline-block;
                 &:hover{
                     border-bottom: 3px solid $black-1;
                 }
@@ -35,6 +34,15 @@ header{
                     border-bottom: 3px solid $black-1;
                 }
             }
+            @media (max-width: 767px) {
+                margin-bottom: 8px;
+                padding-left: 0;
+                padding-right: 0;
+            }
         }
+    }
+    @media (min-width: 768px) {
+        width: calc(100% - 180px);
+        text-align: right;
     }
 }
