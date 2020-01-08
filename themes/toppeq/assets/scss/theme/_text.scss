@@ -1,27 +1,16 @@
-h1, .h1 { 
-    font-size: 40px;
- }
-h2, .h2 { 
-    font-size: 35px;
-}
-h3, .h3 { 
-    font-size: 29px;
-}
-h4, .h4 { 
-    
-}
-h5, .h5 { 
-    
-}
-h6, .h6 { 
-   
+.section-main-title{
+    font-size: 27.5px;
+    font-weight: normal;
+    line-height: normal;
+    color: $title-color;
+    margin-bottom: 40px;
 }
 
 .section-title-1{
-    font-size: 45px;
+    font-size: 23px;
     font-weight: normal;
     line-height: normal;
     letter-spacing: normal;
-    color: #272727;
+    color: $title-color;
     margin-bottom: 0;
 }
