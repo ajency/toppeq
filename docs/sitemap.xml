@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ajency.github.io/toppeq/screens/add-expense/</loc>
+    <lastmod>2020-01-06T12:34:20+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ajency.github.io/toppeq/screens/</loc>
     <lastmod>2020-01-06T12:34:20+05:30</lastmod>
     <priority>0</priority>

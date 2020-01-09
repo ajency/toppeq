@@ -7287,13 +7287,17 @@ h3, .h3 {
 .btn {
   min-width: 180px;
   border-radius: 7px;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: normal;
   border-radius: 7px;
-  padding: 15px 10px;
+  padding: 12px 10px;
   text-align: left; }
   .btn-w100 {
     width: 100%; }
+  .btn-reset {
+    background: transparent;
+    border: 0;
+    outline: 0; }
   @media (min-width: 768px) {
     .btn {
       min-width: 380px;
@@ -7304,6 +7308,9 @@ h3, .h3 {
 
 .form-field {
   margin-bottom: 50px; }
+  @media (max-width: 767px) {
+    .form-field {
+      margin-bottom: 25px; } }
 
 .form-label {
   font-size: 15px;
@@ -7336,22 +7343,35 @@ h3, .h3 {
     font-size: 20px;
     font-weight: 300;
     color: var(--select-text-color); }
+    @media (max-width: 767px) {
+      .form-control::placeholder {
+        font-size: 16px; } }
   .form-control:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
     font-size: 20px;
     font-weight: 300;
     color: var(--select-text-color); }
+    @media (max-width: 767px) {
+      .form-control:-ms-input-placeholder {
+        font-size: 16px; } }
   .form-control::-ms-input-placeholder {
     /* Microsoft Edge */
     font-size: 20px;
     font-weight: 300;
     color: var(--select-text-color); }
+    @media (max-width: 767px) {
+      .form-control::-ms-input-placeholder {
+        font-size: 16px; } }
   .form-control:focus {
     box-shadow: none;
     background-color: var(--select-bg-color);
     color: var(--select-text-color); }
   .form-control.w100 {
     max-width: 100%; }
+  @media (max-width: 767px) {
+    .form-control {
+      height: 50px;
+      font-size: 16px; } }
 
 .switch {
   position: relative;
@@ -7411,6 +7431,53 @@ h3, .h3 {
       border-radius: 17px; }
       .switch .slider.round::before {
         border-radius: 50%; }
+
+.radio-input {
+  display: block;
+  position: relative;
+  padding-right: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  color: var(--select-text-color);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .radio-input input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer; }
+  .radio-input input:checked ~ .checkmark {
+    background-color: #dd7649;
+    border: 1px solid #dd7649; }
+  .radio-input input:checked ~ .checkmark:after {
+    display: block; }
+  .radio-input .checkmark {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+    border: 1px solid var(--select-text-color);
+    border-radius: 50%; }
+    .radio-input .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+      top: 7px;
+      left: 7px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white; }
+  @media (max-width: 767px) {
+    .radio-input {
+      font-size: 16px; } }
+
+textarea {
+  resize: none; }
 
 .section-wrapper {
   margin-bottom: 50px; }
@@ -7622,6 +7689,8 @@ header {
 .navbar-toggler {
   padding: 0;
   outline: 0; }
+  .navbar-toggler i {
+    color: var(--font-color); }
   .navbar-toggler:focus {
     outline: 0; }
 
@@ -7638,11 +7707,15 @@ header {
       outline: 0; }
     .select2-container.select2-container--default .selection .select2-selection__rendered {
       line-height: 80px;
-      font-size: 16px;
+      font-size: 20px;
       font-weight: normal;
       color: var(--select-text-color);
       padding-left: 12px;
       padding-right: 12px; }
+      @media (max-width: 767px) {
+        .select2-container.select2-container--default .selection .select2-selection__rendered {
+          line-height: 50px;
+          font-size: 16px; } }
     .select2-container.select2-container--default .selection .select2-selection__arrow {
       height: 80px;
       right: 20px; }
@@ -7651,6 +7724,12 @@ header {
         border-style: solid !important;
         border-width: 15px 8px 0 8px !important;
         margin-top: -10px; }
+      @media (max-width: 767px) {
+        .select2-container.select2-container--default .selection .select2-selection__arrow {
+          height: 50px; } }
+    @media (max-width: 767px) {
+      .select2-container.select2-container--default .selection .select2-selection {
+        height: 50px; } }
 
 .select2-container--open .select2-dropdown {
   border-radius: 7px;
@@ -7714,6 +7793,10 @@ header {
   right: 15px;
   top: 50%;
   transform: translateY(-50%) rotate(-45deg); }
+
+.back-button i {
+  font-size: 25px;
+  color: var(--font-color); }
 
 :root {
   --primary-color: #4d6d9a;

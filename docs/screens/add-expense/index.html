@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html><head>
-	<meta name="generator" content="Hugo 0.55.6" />
-	<title> - Toppeq</title>
+	<title>Add expense - Toppeq</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no">
     <link type="image/x-icon" href="/toppeq/img/favicon.ico" rel="shortcut icon">
     
@@ -37,7 +36,57 @@
         </nav>
     </div>
 </header>
-<div id="content111">
+<div id="content">
+
+	<div class="container-fluid">
+		<div class="back-button mb-3">
+			<button class="p-0 btn-reset">
+				
+				<i class="fa fa-arrow-left"></i>
+			</button>
+		</div>
+		<div class="">
+			<div class="form-field">
+				<label class="form-label">
+					<span class="form-label-content">Amount</span>
+				</label>
+				<input class="form-control w100" type="text" placeholder="">                         
+			</div>
+			<div class="form-field">
+				<label class="form-label">
+					<span class="form-label-content">What was this amount spend for</span>
+				</label>
+				<input class="form-control w100" type="text" placeholder="">                          
+			</div>
+			<div class="form-field">
+				<label class="form-label d-block">
+					<span class="form-label-content">This expense is</span>
+				</label>
+				<div class="custom-radio-input">
+					<label class="radio-input">
+						Planned Expense
+						<input type="radio" checked="checked" name="radio">
+						<span class="checkmark"></span>
+					</label>
+				</div>
+				<div class="custom-radio-input">
+					<label class="radio-input">
+						Incurred Exoense
+						<input type="radio" name="radio">
+						<span class="checkmark"></span>
+					</label>
+				</div>
+			</div>
+			<div class="form-field">
+				<label class="form-label d-block">
+					<span class="form-label-content">Note (optional)</span>				
+				</label>
+				<textarea rows="4" class="form-control w100"></textarea>
+			</div>
+		</div>
+	</div>
+
+
         </div><footer>
     <div class="container-fluid mt-2">
         This is footer 

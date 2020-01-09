@@ -56,6 +56,9 @@ header{
 .navbar-toggler{
     padding: 0;
     outline: 0;
+    i{
+        color: var(--font-color);
+    }
     &:focus{
         outline: 0;
     }
