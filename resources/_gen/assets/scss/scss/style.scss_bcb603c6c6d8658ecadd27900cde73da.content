@@ -7355,7 +7355,8 @@ h3, .h3 {
   position: relative;
   display: inline-block;
   width: 76px;
-  height: 35px; }
+  height: 35px;
+  margin-bottom: 0; }
   .switch input {
     opacity: 0;
     width: 0;
@@ -7378,7 +7379,11 @@ h3, .h3 {
     background-color: #87ceeb;
     -webkit-transition: .4s;
     transition: .4s;
-    overflow: hidden; }
+    overflow: hidden;
+    font-size: 11px;
+    font-weight: 300;
+    padding: 10px;
+    color: #fff; }
     .switch .slider::before {
       position: absolute;
       content: "";
@@ -7393,12 +7398,13 @@ h3, .h3 {
       position: absolute;
       top: -2px;
       right: -2px;
-      content: "";
       border-radius: 50%;
       width: 14px;
       height: 14px;
       background-color: #ffec00;
       box-shadow: 0 1px 8.5px 0 #ffec00; }
+    .switch .slider.slider-default {
+      background-color: var(--default-toggle); }
     .switch .slider.round {
       border-radius: 17px; }
       .switch .slider.round::before {
@@ -7499,11 +7505,23 @@ hr.line-separator {
 
 .message ul {
   list-style: none;
-  padding-left: 0; }
+  padding-left: 0;
+  margin-bottom: 0; }
   .message ul li {
     padding-bottom: 9px;
     border-bottom: 1px solid var(--font-color);
     margin-bottom: 15px; }
+    .message ul li.hightlighted {
+      position: relative; }
+      .message ul li.hightlighted:before {
+        position: absolute;
+        content: "";
+        left: -19px;
+        top: 4px;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: #95aca4; }
     .message ul li:last-child {
       border-bottom: 0;
       padding-bottom: 0;
@@ -7607,6 +7625,9 @@ header {
     .select2-container--open .select2-dropdown .select2-results .select2-results__options .select2-results__option[aria-selected=true] {
       background-color: var(--select-highlight-color); }
 
+.list-style-none {
+  list-style: none; }
+
 :root {
   --primary-color: #4d6d9a;
   --secondary-color: #0F2952;
@@ -7617,7 +7638,8 @@ header {
   --select-highlight-color: #ededed;
   --card-bg: #fafafa;
   --card-header-bg: #f6f6f6;
-  --card-more: #7a7a7a; }
+  --card-more: #7a7a7a;
+  --default-toggle: #555555; }
 
 [data-theme="dark"] {
   --primary-color: #4d6d9a;
@@ -7629,7 +7651,8 @@ header {
   --select-highlight-color: #0b0b0b;
   --card-bg: #0b0b0b;
   --card-header-bg: #141414;
-  --card-more: #7a7a7a; }
+  --card-more: #7a7a7a;
+  --default-toggle: #555555; }
 
 body {
   background-color: var(--bg-color);

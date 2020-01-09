@@ -113,16 +113,30 @@ hr.line-separator{
     ul{
         list-style: none;
         padding-left: 0;
+        margin-bottom: 0;
         li{
            padding-bottom: 9px;
            border-bottom: 1px solid var(--font-color);
            margin-bottom: 15px;
-           &:last-child{
-               border-bottom: 0;
-               padding-bottom: 0;
-               margin-bottom: 0;
-           }
-        }
+            &.hightlighted{
+                position: relative;
+                &:before{
+                    position: absolute;
+                    content: "";
+                    left: -19px;
+                    top: 4px;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    background: #95aca4;
+                }
+            }
+            &:last-child{
+                border-bottom: 0;
+                padding-bottom: 0;
+                margin-bottom: 0;
+            }
+        }        
     }
     &-title{
         margin-bottom: 10px;
