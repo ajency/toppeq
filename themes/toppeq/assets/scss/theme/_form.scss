@@ -10,6 +10,9 @@
     font-weight: 900;
     color: var(--font-color);
     margin-bottom: 10px;
+    @media (max-width: 767px) {
+        font-size: 18px;
+    }
 }
 
 .form-help-text{
