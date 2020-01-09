@@ -13,6 +13,9 @@
     --yellow: #f4a24c;
     --card-text-color: #414141;
     --card-section-border: #E1E0E1;
+    --table-th: #202020
+    --table-td: #292929;
+    --table-bg-color: #fbfbfb;
 }
 
 [data-theme="dark"] {
@@ -30,6 +33,9 @@
     --yellow: #f4a24c;
     --card-text-color: #ffffff;
     --card-section-border: #4C4C4C;
+    --table-th: #ffffff;
+    --table-td: #ffffff;
+    --table-bg-color: #141414;
 }
 
 body {

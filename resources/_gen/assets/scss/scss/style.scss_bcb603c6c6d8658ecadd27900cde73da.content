@@ -7573,6 +7573,9 @@ hr.line-separator {
     color: var(--card-text-color); }
   .data-card-inner {
     position: relative; }
+  @media (max-width: 767px) {
+    .data-card {
+      margin-bottom: 15px; } }
 
 .logo {
   width: 100px; }
@@ -7661,6 +7664,44 @@ header {
     .select2-container--open .select2-dropdown .select2-results .select2-results__options .select2-results__option[aria-selected=true] {
       background-color: var(--select-highlight-color); }
 
+.table thead tr th {
+  padding: 0;
+  font-size: 25px;
+  font-weight: 900;
+  color: var(--table-th);
+  border-top: 0;
+  border-bottom: 0; }
+  .table thead tr th > div {
+    padding: 15px 20px;
+    border-bottom: 1px solid #C5C5C5; }
+    @media (max-width: 1199px) {
+      .table thead tr th > div {
+        padding: 10px; } }
+  @media (max-width: 1199px) {
+    .table thead tr th {
+      font-size: 16px; } }
+  @media (max-width: 750px) {
+    .table thead tr th {
+      min-width: 200px; } }
+
+.table tbody tr td {
+  border: 0;
+  border-top: 0;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 20px 20px;
+  color: var(--table-td);
+  background-color: var(--table-bg-color);
+  border-bottom: 20px solid var(--bg-color); }
+  @media (max-width: 1199px) {
+    .table tbody tr td {
+      font-size: 14px;
+      padding: 10px;
+      border-bottom: 10px solid var(--bg-color); } }
+
+.table tbody tr:first-child td {
+  border-top: 20px solid var(--bg-color); }
+
 .list-style-none {
   list-style: none; }
 
@@ -7688,7 +7729,10 @@ header {
   --default-toggle: #555555;
   --yellow: #f4a24c;
   --card-text-color: #414141;
-  --card-section-border: #E1E0E1; }
+  --card-section-border: #E1E0E1;
+  --table-th: #202020
+    --table-td: #292929;
+  --table-bg-color: #fbfbfb; }
 
 [data-theme="dark"] {
   --primary-color: #4d6d9a;
@@ -7704,7 +7748,10 @@ header {
   --default-toggle: #555555;
   --yellow: #f4a24c;
   --card-text-color: #ffffff;
-  --card-section-border: #4C4C4C; }
+  --card-section-border: #4C4C4C;
+  --table-th: #ffffff;
+  --table-td: #ffffff;
+  --table-bg-color: #141414; }
 
 body {
   background-color: var(--bg-color);

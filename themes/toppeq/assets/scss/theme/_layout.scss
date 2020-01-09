@@ -195,4 +195,7 @@ hr.line-separator{
     &-inner{
         position: relative;
     }
+    @media (max-width: 767px) {
+        margin-bottom: 15px;
+    }
 }
