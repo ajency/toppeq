@@ -40,6 +40,7 @@ hr.line-separator{
             padding-left: 15px;
             span{
                 font-size: 22px;
+                font-weight: 400;
                 @media (max-width: 992px) {
                     font-size: 16px;
                 }
@@ -51,7 +52,7 @@ hr.line-separator{
                 position: absolute;
                 left: 0;
                 top: 0;
-                background-color: #f4a24c;
+                background-color: var(--yellow);
             }
             @media (max-width: 1024px) {
                 font-size: 28px;
@@ -150,5 +151,48 @@ hr.line-separator{
             color: var(--font-color);
             margin-bottom: 0;
         }
+    }
+}
+
+.card-section{
+    padding: 35px 0;
+    border-bottom: 1px solid var(--card-section-border);
+    .card-section-header{
+        margin-bottom: 25px;
+        h3{
+            font-size: 24px;
+        }
+        h5{
+            font-size: 16px;
+        }
+    }
+    &:last-child{
+        border-bottom: 0;
+    }
+}
+
+.data-card{
+    border-radius: 7px;
+    box-shadow: 0 2px 9px 0 rgba(193, 193, 193, 0.5);
+    background-color: var(--select-bg-color);
+    padding: 40px 0;
+    &-inner{
+        border-left: 6px solid #f4a24c;
+        padding-left: 15px; 
+    }
+    h1{
+        font-size: 42px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: var(--card-text-color);
+    }
+    h4{
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 0;
+        color: var(--card-text-color);
+    }
+    &-inner{
+        position: relative;
     }
 }

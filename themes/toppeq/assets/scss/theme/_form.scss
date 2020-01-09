@@ -1,5 +1,5 @@
 .form-field {
-    margin-bottom: 25px;
+    margin-bottom: 50px;
 }
 
 .form-label{
@@ -19,37 +19,39 @@
 
 .form-control{
     font-size: 20px;
-    font-weight: normal;
-    color: $input-border;
-    color: #000;
-    border-radius: 0;
-    border: 0;
-    border-bottom: 1px solid $input-border;
+    font-weight: 300;
+    border-radius: 7px;
+    border: 0;    
     outline: 0;
-    padding-left: 0;
     height: 80px;
-    background-color: transparent;
+    color: var(--select-text-color);
+    background-color: var(--select-bg-color);
+    max-width: 380px;
+    width: 100%;
     &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-        color: $input-border;
         opacity: 1; /* Firefox */
         font-size: 20px;
+        font-weight: 300;
+        color: var(--select-text-color);
     }      
     &:-ms-input-placeholder { /* Internet Explorer 10-11 */
-        color: $input-border;
         font-size: 20px;
+        font-weight: 300;
+        color: var(--select-text-color);
     }
-      
     &::-ms-input-placeholder { /* Microsoft Edge */
-        color: $input-border;
         font-size: 20px;
+        font-weight: 300;
+        color: var(--select-text-color);
     }
 	&:focus{
-        border: 0;
-        border-bottom: 1px solid $input-border;
         box-shadow: none;
-        color: #000;
-        background-color: transparent;
-	}
+        background-color: var(--select-bg-color);
+        color: var(--select-text-color);
+    }
+    &.w100{
+        max-width: 100%;
+    }
 }
 
 .switch {
