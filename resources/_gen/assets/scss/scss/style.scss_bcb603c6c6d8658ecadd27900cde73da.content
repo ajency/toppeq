@@ -7794,9 +7794,22 @@ header {
   top: 50%;
   transform: translateY(-50%) rotate(-45deg); }
 
+.p-15 {
+  padding: 15px; }
+
 .back-button i {
   font-size: 25px;
   color: var(--font-color); }
+
+@media (max-width: 768px) {
+  .fixed-bottom-button {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+    padding: 15px;
+    background: var(--bg-color); } }
 
 :root {
   --primary-color: #4d6d9a;

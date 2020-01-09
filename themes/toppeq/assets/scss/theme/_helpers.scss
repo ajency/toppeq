@@ -12,3 +12,9 @@
     top: 50%;
     transform: translateY(-50%) rotate(-45deg);
 }
+
+.p{
+    &-15{
+        padding: 15px;
+    }
+}
