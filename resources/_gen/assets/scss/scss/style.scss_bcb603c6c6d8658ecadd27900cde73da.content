@@ -7682,7 +7682,7 @@ header {
       font-size: 16px; } }
   @media (max-width: 750px) {
     .table thead tr th {
-      min-width: 200px; } }
+      min-width: 180px; } }
 
 .table tbody tr td {
   border: 0;
@@ -7695,7 +7695,7 @@ header {
   border-bottom: 20px solid var(--bg-color); }
   @media (max-width: 1199px) {
     .table tbody tr td {
-      font-size: 14px;
+      font-size: 18px;
       padding: 10px;
       border-bottom: 10px solid var(--bg-color); } }
 
