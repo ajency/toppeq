@@ -7518,6 +7518,9 @@ textarea {
       height: 50px;
       line-height: 50px; } }
 
+.form-field .add-tags button {
+  color: var(--select-text-color); }
+
 .currency-select {
   position: absolute;
   left: 0;
