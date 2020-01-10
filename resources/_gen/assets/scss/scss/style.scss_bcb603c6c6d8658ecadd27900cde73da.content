@@ -7316,7 +7316,7 @@ h3, .h3 {
 
 .form-label {
   font-size: 15px;
-  font-weight: 900;
+  font-weight: 700;
   color: var(--font-color);
   margin-bottom: 10px; }
   @media (max-width: 767px) {
