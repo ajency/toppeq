@@ -166,8 +166,8 @@
         cursor: pointer;
     }
     input:checked ~ .checkmark {
-        background-color: $orange;
-        border: 1px solid $orange;
+        background-color: var(--bg-color);
+        border: 1px solid var(--select-text-color);
     }
     input:checked ~ .checkmark:after {
         display: block;
@@ -185,21 +185,63 @@
             content: "";
             position: absolute;
             display: none;
-            top: 4px;
-            left: 4px;
-            font: normal normal normal 14px/1 FontAwesome;
-            content: "\f00c";
+            top: 7px;
+            left: 7px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--primary-color);
             color: #fff;
         }
     }
     @media (max-width: 767px) {
         font-size: 16px;
     }
- }
+}
+
+.custom-radio-input{
+    max-width: 380px;
+    &.w100{
+        max-width: 100%;
+    }
+}
 
 textarea {
     resize: none;
 }
+
+.form-field{
+    .bootstrap-tagsinput{
+        width: 100%;
+        font-size: 20px;
+        font-weight: 300;
+        border-radius: 7px;
+        border: 0;    
+        outline: 0;
+        height: 80px;
+        line-height: 80px;
+        color: var(--font-color);
+        background-color: var(--select-bg-color);
+        box-shadow: none;
+        .tag{
+            color: var(--font-color);
+            font-size: 20px;
+            font-weight: 300;
+            border-radius: 30px;
+            border: 1px solid var(--primary-color);
+            padding: 5px 10px;
+            @media (max-width: 767px) {
+                font-size: 16px;
+            }
+        }
+        @media (max-width: 767px) {
+            font-size: 16px;
+            height: 50px;
+            line-height: 50px;
+        }
+    }
+}
+
 
 .currency{
     &-select{
@@ -211,5 +253,29 @@ textarea {
         width: calc(100% - 110px);
         margin-left: auto;
         margin-right: 0;
+    }
+}
+
+.form-msg{
+    margin-bottom: 25px;
+    padding: 15px;
+    &.success{
+        background: #C1DBD0;
+        .form-msg-text{
+            p{
+                color: #000;
+            }
+        }
+    }
+    &.failure{
+        background: #f89ea6;
+        .form-msg-text{
+            p{
+                color: #fff;
+            }
+        }
+    }
+    @media (min-width: 768px) {
+        margin-bottom: 50px;
     }
 }

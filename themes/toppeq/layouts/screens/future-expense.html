@@ -1,0 +1,74 @@
+{{ define "main" }}
+
+<div class="container-fluid">
+	<div class="slide-in show">
+		<div class="slide-loader">
+			
+		</div>		
+		<div class="slide-in-content">
+			<div class="form-msg success">
+				<button class="p-0 btn-reset">
+					<i class="fa fa-times f-22"></i>
+				</button>
+				<div class="mt-1">
+					<div class="form-msg-icon">
+
+					</div>
+					<div class="form-msg-text">
+						<p class="m-0">Your Future Expense of ₹50, 000 for purchase of laptop was added</p>
+					</div>
+				</div>
+			</div>
+			<div class="form-field">
+				<label class="form-label d-block">
+					<span class="form-label-content">This expense has been classifled as <i class="fa fa-info-circle ml-1"></i></span>
+				</label>
+				<input class="form-control w100" type="text" placeholder="Office Expenses"> 
+			</div>
+			<div class="form-field">
+				<label class="form-label d-block">
+					<span class="form-label-content">We have notified these people</span>
+				</label>
+				<input class="w100" type="text" value="Aditya" data-role="tagsinput">
+				<div class="add pl-1 mt-1">
+					Add: <button class="btn-reset text-underline">Urmi</button> <button class="btn-reset text-underline">Urmi</button> <button class="btn-reset text-underline">Hema</button>
+				</div>
+			</div>
+			<div class="form-field">
+				<label class="form-label d-block">
+					<span class="form-label-content">How would you like to spend this</span>
+				</label>
+				<div class="custom-radio-input w100">
+					<label class="radio-input">
+						One Time
+						<input type="radio" name="radio">
+						<span class="checkmark"></span>
+					</label>
+				</div>
+				<div class="custom-radio-input w100">
+					<label class="radio-input">
+						Over a Period
+						<input type="radio" name="radio">
+						<span class="checkmark"></span>
+					</label>
+				</div>
+			</div>
+			<div class="form-field">
+				<label class="form-label d-block">
+					<span class="form-label-content">To be spent by</span>					
+				</label>
+				<select class="select select-normal" title="">
+					<option value="India">India</option>
+					<option value="USA">USA</option>
+					<option value="England">England</option>
+					<option value="Belgium">Belgium</option>			
+				</select>
+			</div>
+		</divc>
+		<div class="fixed-bottom-button show">
+			<button class="btn btn-outline-primary btn-w100">This expense will not be repeated</button>
+		</div>
+	</div>	
+</div>
+
+{{ end }}
