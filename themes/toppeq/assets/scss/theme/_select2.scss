@@ -31,6 +31,10 @@
                     border-style: solid !important;
                     border-width: 15px 8px 0 8px !important;
                     margin-top: -10px;
+                    @media (max-width: 767px) {
+                        border-width: 10px 8px 0 8px !important;
+                        margin-top: -5px;
+                    }
                 }
                 @media (max-width: 767px) {
                     height: 50px;
