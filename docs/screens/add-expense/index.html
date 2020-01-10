@@ -5,9 +5,10 @@
     <link type="image/x-icon" href="/toppeq/img/favicon.ico" rel="shortcut icon">
     
         
-        <link rel="stylesheet" href="/toppeq/css/style.min.3a7916fce83e4065de7671197858fba1f4391f78f2567f70187a85578e409d6c.css">
+        <link rel="stylesheet" href="/toppeq/css/style.min.2600d4f5aaa398a72a05de63f023e2e987bf2295c8b18bcd075b231268805c5c.css">
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/toppeq/vendor/select2/select2.min.css">
 </head><body><header>
     <div class="container-fluid">
@@ -38,65 +39,69 @@
 </header>
 <div id="content">
 
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-4">
-
-			</div>
-			<div class="col-md-4">
-				<div class="back-button mb-3">
-					<button class="p-0 btn-reset">
-						<i class="fa fa-arrow-left"></i>
-					</button>
-				</div>
-				<div class="expense-wrap pb-7 pb-lg-0">
-					<div class="form-field">
-						<label class="form-label">
-							<span class="form-label-content">Amount</span>
-						</label>
-						<input class="form-control w100" type="text" placeholder="">                         
-					</div>
-					<div class="form-field">
-						<label class="form-label">
-							<span class="form-label-content">What was this amount spend for</span>
-						</label>
-						<input class="form-control w100" type="text" placeholder="">                          
-					</div>
-					<div class="form-field">
-						<label class="form-label d-block">
-							<span class="form-label-content">This expense is</span>
-						</label>
-						<div class="custom-radio-input">
-							<label class="radio-input">
-								Planned Expense
-								<input type="radio" checked="checked" name="radio">
-								<span class="checkmark"></span>
-							</label>
-						</div>
-						<div class="custom-radio-input">
-							<label class="radio-input">
-								Incurred Expense
-								<input type="radio" name="radio">
-								<span class="checkmark"></span>
-							</label>
-						</div>
-					</div>
-					<div class="form-field">
-						<label class="form-label d-block">
-							<span class="form-label-content">Note (optional)</span>				
-						</label>
-						<textarea rows="4" class="form-control w100"></textarea>
-					</div>
-					<div class="fixed-bottom-button">
-						<button class="btn btn-primary btn-w100">Add Expense</button>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4">
-
-			</div>
+<div class="container-fluid">
+	<div class="slide-in show">
+		<div class="slide-loader">
+			
 		</div>		
-	</div>
+		<div class="slide-in-content">
+			<div class="back-button mb-3 p-t-15">
+				<button class="p-0 btn-reset">
+					<i class="fa fa-arrow-left"></i>
+				</button>
+			</div>
+			<div class="form-field position-relative">
+				<label class="form-label">
+					<span class="form-label-content">Amount</span>
+				</label>
+				<div class="currency-select">
+					<select class="select select-normal" title="">
+						<option value="India">₹</option>
+						<option value="USA">Dollar</option>
+						<option value="England">pound</option>		
+					</select>
+				</div>
+				<div class="currency-input">
+					<input class="form-control w100" type="text" placeholder="">   
+				</div>                      
+			</div>
+			<div class="form-field">
+				<label class="form-label">
+					<span class="form-label-content">What was this amount spend for</span>
+				</label>
+				<input class="form-control w100" type="text" placeholder="">                          
+			</div>
+			<div class="form-field">
+				<label class="form-label d-block">
+					<span class="form-label-content">This expense is</span>
+				</label>
+				<div class="custom-radio-input">
+					<label class="radio-input">
+						Planned Expense
+						<input type="radio" checked="checked" name="radio">
+						<span class="checkmark"></span>
+					</label>
+				</div>
+				<div class="custom-radio-input">
+					<label class="radio-input">
+						Incurred Expense
+						<input type="radio" name="radio">
+						<span class="checkmark"></span>
+					</label>
+				</div>
+			</div>
+			<div class="form-field">
+				<label class="form-label d-block">
+					<span class="form-label-content">Note (optional)</span>				
+				</label>
+				<textarea rows="4" class="form-control w100"></textarea>
+			</div>
+		</div>
+		<div class="fixed-bottom-button show">
+			<button class="btn btn-primary btn-w100">Add Expense</button>
+		</div>
+	</div>	
+</div>
 
 
         </div><footer>

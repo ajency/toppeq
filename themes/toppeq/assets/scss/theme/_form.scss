@@ -30,7 +30,7 @@
     border: 0;    
     outline: 0;
     height: 80px;
-    color: var(--select-text-color);
+    color: var(--font-color);
     background-color: var(--select-bg-color);
     max-width: 380px;
     width: 100%;
@@ -62,7 +62,7 @@
 	&:focus{
         box-shadow: none;
         background-color: var(--select-bg-color);
-        color: var(--select-text-color);
+        color: var(--font-color);
     }
     &.w100{
         max-width: 100%;
@@ -199,4 +199,17 @@
 
 textarea {
     resize: none;
+}
+
+.currency{
+    &-select{
+        position: absolute;
+        left: 0;
+        width: 110px;
+    }
+    &-input{
+        width: calc(100% - 130px);
+        margin-left: auto;
+        margin-right: 0;
+    }
 }
