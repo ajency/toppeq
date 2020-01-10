@@ -44,8 +44,7 @@
 }
 
 .back-button{
-    i{
-        font-size: 25px;
-        color: var(--font-color);
+    .i-left{
+        border-color: var(--font-color);
     }
 }

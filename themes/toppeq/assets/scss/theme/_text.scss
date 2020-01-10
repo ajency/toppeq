@@ -3,6 +3,9 @@ h1, .h1 {
  }
 h2, .h2 { 
     font-size: 35px;
+    @media (max-width: 767px) {
+        font-size: 25px;
+    }
 }
 h3, .h3 { 
     font-size: 30px;

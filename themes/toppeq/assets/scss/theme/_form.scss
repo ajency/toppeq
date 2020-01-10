@@ -169,6 +169,9 @@
         background-color: var(--bg-color);
         border: 1px solid var(--select-text-color);
     }
+    input:checked ~ .text {
+        color: var(--font-color);
+    }
     input:checked ~ .checkmark:after {
         display: block;
     }
@@ -242,6 +245,7 @@ textarea {
         }
     }
     .add-tags{
+        color: var(--select-text-color);
         button{
             color: var(--select-text-color);
         }

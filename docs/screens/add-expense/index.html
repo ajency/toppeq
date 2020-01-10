@@ -5,7 +5,7 @@
     <link type="image/x-icon" href="/toppeq/img/favicon.ico" rel="shortcut icon">
     
         
-        <link rel="stylesheet" href="/toppeq/css/style.min.e6bc35b62a8d616de7a45caa38ba35ff58478f621518955f363101c0348b6548.css">
+        <link rel="stylesheet" href="/toppeq/css/style.min.093247de896786ffc72dd26014534640fc42151727a39ba7fd65be04673a829c.css">
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,900&display=swap" rel="stylesheet">
@@ -46,11 +46,12 @@
 			
 		</div>		
 		<div class="slide-in-content">
-			<div class="back-button mb-3 p-t-15">
+			<div class="back-button mb-2 p-t-15">
 				<button class="p-0 btn-reset">
-					<i class="fa fa-arrow-left"></i>
+					<span class="i-left"></span>
 				</button>
 			</div>
+			<h2 class="font-weight-bold mb-3">I want to add an expense</h2>
 			<div class="form-field position-relative">
 				<label class="form-label">
 					<span class="form-label-content">Amount</span>
@@ -63,7 +64,7 @@
 					</select>
 				</div>
 				<div class="currency-input">
-					<input class="form-control w100" type="text" placeholder="">   
+					<input class="form-control w100" type="text" placeholder="Type the amount">   
 				</div>                      
 			</div>
 			<div class="form-field">
@@ -78,15 +79,15 @@
 				</label>
 				<div class="custom-radio-input w100">
 					<label class="radio-input">
-						Planned Expense
 						<input type="radio" checked="checked" name="radio">
+						<span class="text">Planned Expense</span>
 						<span class="checkmark"></span>
 					</label>
 				</div>
 				<div class="custom-radio-input w100">
 					<label class="radio-input">
-						Incurred Expense
 						<input type="radio" name="radio">
+						<span class="text">Incurred Expense</span>
 						<span class="checkmark"></span>
 					</label>
 				</div>
@@ -95,7 +96,7 @@
 				<label class="form-label d-block">
 					<span class="form-label-content">Note (optional)</span>				
 				</label>
-				<textarea rows="4" class="form-control w100"></textarea>
+				<textarea rows="4" class="form-control w100 p-1" placeholder="Additional description"></textarea>
 			</div>
 		</div>
 		<div class="fixed-bottom-button show">

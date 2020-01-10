@@ -7244,6 +7244,9 @@ h1, .h1 {
 
 h2, .h2 {
   font-size: 35px; }
+  @media (max-width: 767px) {
+    h2, .h2 {
+      font-size: 25px; } }
 
 h3, .h3 {
   font-size: 30px; }
@@ -7456,6 +7459,8 @@ h3, .h3 {
   .radio-input input:checked ~ .checkmark {
     background-color: var(--bg-color);
     border: 1px solid var(--select-text-color); }
+  .radio-input input:checked ~ .text {
+    color: var(--font-color); }
   .radio-input input:checked ~ .checkmark:after {
     display: block; }
   .radio-input .checkmark {
@@ -7519,8 +7524,10 @@ textarea {
       height: 50px;
       line-height: 50px; } }
 
-.form-field .add-tags button {
+.form-field .add-tags {
   color: var(--select-text-color); }
+  .form-field .add-tags button {
+    color: var(--select-text-color); }
 
 .currency-select {
   position: absolute;
@@ -7890,9 +7897,8 @@ header {
     .fixed-bottom-button {
       width: 100%; } }
 
-.back-button i {
-  font-size: 25px;
-  color: var(--font-color); }
+.back-button .i-left {
+  border-color: var(--font-color); }
 
 .list-style-none {
   list-style: none; }
@@ -7906,6 +7912,13 @@ header {
   right: 15px;
   top: 50%;
   transform: translateY(-50%) rotate(-45deg); }
+
+.i-left {
+  border: solid var(--card-text-color);
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 5px;
+  transform: rotate(135deg); }
 
 .p-t-15 {
   padding-top: 15px; }
