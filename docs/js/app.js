@@ -9,6 +9,8 @@ $(document).ready(function () {
         dropdownCssClass: "cs-select-normal-results",
     });
 
+    $( "#datepicker" ).datepicker();
+
     // Theme mode JS
 
     const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');

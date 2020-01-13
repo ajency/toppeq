@@ -7470,7 +7470,7 @@ h3, .h3 {
     cursor: pointer; }
   .radio-input input:checked ~ .checkmark {
     background-color: var(--bg-color);
-    border: 1px solid var(--select-text-color); }
+    border: 1px solid var(--primary-color); }
   .radio-input input:checked ~ .text {
     color: var(--font-color); }
   .radio-input input:checked ~ .checkmark:after {
