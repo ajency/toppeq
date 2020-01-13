@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html><head>
-	<title>Add expense - Toppeq</title>
+	<title>Add expense classification - Toppeq</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no">
     <link type="image/x-icon" href="/toppeq/img/favicon.ico" rel="shortcut icon">
     
@@ -50,57 +50,72 @@
 				<button class="p-0 btn-reset">
 					<span class="i-left"></span>
 				</button>
-			</div>
-			<h2 class="font-weight-bold mb-3">I want to add an expense</h2>
-			<div class="form-field position-relative">
-				<label class="form-label">
-					<span class="form-label-content">Amount</span>
-				</label>
-				<div class="currency-select">
-					<select class="select select-normal" title="">
-						<option value="India">₹</option>
-						<option value="USA">$</option>
-						<option value="England">£</option>		
-					</select>
-				</div>
-				<div class="currency-input">
-					<input class="form-control w100" type="text" placeholder="Type the amount">   
-				</div>                      
+				<button class="btn-reset btn-add p-0 float-right">
+					<img src="/toppeq/images/add-icon-dark.svg" class="n-image" alt="Add" width="18" height="18">
+					<img src="/toppeq/images/add-icon-light.svg" class="h-image" alt="Add" width="18" height="18">
+				</button>
 			</div>
 			<div class="form-field">
-				<label class="form-label">
-					<span class="form-label-content">What was this amount spend for</span>
-				</label>
-				<input class="form-control w100" type="text" placeholder="">                          
-			</div>
-			<div class="form-field">
-				<label class="form-label d-block">
-					<span class="form-label-content">This expense is</span>
+				<label class="form-label d-block mb-3">
+					<span class="form-label-content h5 m-0">Select the classification of the “Travel to mumbai for toppeq</span>
 				</label>
 				<div class="custom-radio-input w100">
 					<label class="radio-input">
+						<input type="radio"  name="radio">
+						<span class="text">Accounting sub heads</span>
+						<span class="checkmark"></span>
+					</label>
+				</div>
+				<div class="custom-radio-input w100">
+					<label class="radio-input">
 						<input type="radio" checked="checked" name="radio">
-						<span class="text">Planned Expense</span>
+						<span class="text">IT and internet services</span>
 						<span class="checkmark"></span>
 					</label>
 				</div>
 				<div class="custom-radio-input w100">
 					<label class="radio-input">
 						<input type="radio" name="radio">
-						<span class="text">Incurred Expense</span>
+						<span class="text">Office expenses</span>
+						<span class="checkmark"></span>
+					</label>
+				</div>
+				<div class="custom-radio-input w100">
+					<label class="radio-input">
+						<input type="radio" name="radio">
+						<span class="text">Maintenance & repair</span>
+						<span class="checkmark"></span>
+					</label>
+				</div>
+				<div class="custom-radio-input w100">
+					<label class="radio-input">
+						<input type="radio" name="radio">
+						<span class="text">Office expenses</span>
+						<span class="checkmark"></span>
+					</label>
+				</div>
+				<div class="custom-radio-input w100">
+					<label class="radio-input">
+						<input type="radio" name="radio">
+						<span class="text">Office supplies</span>
+						<span class="checkmark"></span>
+					</label>
+				</div>
+				<div class="custom-radio-input w100">
+					<label class="radio-input">
+						<input type="radio" name="radio">
+						<span class="text">Employee benefits</span>
+						<span class="checkmark"></span>
+					</label>
+				</div>
+				<div class="custom-radio-input w100">
+					<label class="radio-input">
+						<input type="radio" name="radio">
+						<span class="text">Others</span>
 						<span class="checkmark"></span>
 					</label>
 				</div>
 			</div>
-			<div class="form-field">
-				<label class="form-label d-block">
-					<span class="form-label-content">Note (optional)</span>				
-				</label>
-				<textarea rows="4" class="form-control w100 p-1" placeholder="Additional description"></textarea>
-			</div>
-		</div>
-		<div class="fixed-bottom-button show">
-			<button class="btn btn-primary btn-w100" onclick="window.location.href ='https://ajency.github.io/toppeq/screens/future-expense/';">Add Expense</button>
 		</div>
 	</div>	
 </div>
