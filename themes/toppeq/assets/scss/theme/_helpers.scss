@@ -41,8 +41,24 @@
     }
 }
 
+.m{
+    &-t{
+        &-15{
+            margin-top: 15px;
+        }
+    }
+}
+
 .text{
     &-underline{
         text-decoration: underline;
+    }
+}
+
+.full-bg{
+    margin: 0 -15px;
+    margin-bottom: 50px;
+    @media (max-width: 767px) {
+        margin-bottom: 25px;
     }
 }

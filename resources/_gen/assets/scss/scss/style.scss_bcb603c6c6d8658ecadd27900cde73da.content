@@ -7303,6 +7303,14 @@ h3, .h3 {
     outline: 0; }
     .btn-reset:focus {
       outline: 0; }
+  .btn-undo {
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    border: 0;
+    border-radius: 4px;
+    background: #fff;
+    color: #000; }
   @media (min-width: 768px) {
     .btn {
       min-width: 380px;
@@ -7932,8 +7940,18 @@ header {
 .f-22 {
   font-size: 22px !important; }
 
+.m-t-15 {
+  margin-top: 15px; }
+
 .text-underline {
   text-decoration: underline; }
+
+.full-bg {
+  margin: 0 -15px;
+  margin-bottom: 50px; }
+  @media (max-width: 767px) {
+    .full-bg {
+      margin-bottom: 25px; } }
 
 :root {
   --primary-color: #4d6d9a;
