@@ -41,6 +41,9 @@ h3, .h3 {
     &-light{
         font-weight: 300;
     }
+    @media (max-width: 767px) {
+        font-size: 15px;
+    }
 }
 
 .label{
