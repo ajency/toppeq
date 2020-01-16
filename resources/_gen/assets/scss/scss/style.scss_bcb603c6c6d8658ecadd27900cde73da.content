@@ -7715,6 +7715,9 @@ hr.line-separator {
     @media (max-width: 767px) {
       .datacard-footer {
         padding: 13px 15px; } }
+  @media (max-width: 767px) {
+    .datacard {
+      margin-bottom: 15px; } }
 
 .message ul {
   list-style: none;
