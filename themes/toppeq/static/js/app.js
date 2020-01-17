@@ -11,6 +11,31 @@ $(document).ready(function () {
 
     $( "#datepicker" ).datepicker();
 
+    // function fakeValidator(event) {
+    //     var $element = $(event.target);
+    //     if ($element.val()) {
+    //         $element.addClass('valid');
+    //     } else {
+    //         $element.removeClass('valid');
+    //     }
+    // }
+
+    // function enableNextElement(event) {
+    //     var $element = $(event.target);
+    //     if ($element.hasClass('valid')) {
+    //         $element.closest('.form-field')
+    //             .next('.form-field').removeClass("v-hidden");
+    //     } else {
+    //         $element.closest('.form-field')
+    //             .next('.form-field').addClass("v-hidden");
+    //     }
+    // }
+
+    // $(document).ready(function() {
+    //     $('.sequence').on('change blur keyup', fakeValidator);
+    //     $('.sequence').on('change blur keyup', enableNextElement);
+    // });
+
     // Theme mode JS
 
     const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
@@ -38,5 +63,6 @@ $(document).ready(function () {
     toggleSwitch.addEventListener('change', switchTheme, false);
 
     // Theme mode JS ends
+
 
 });
